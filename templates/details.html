@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h3>Détails pour l'objet</h3>
+
+<div class="content">
+
+    <ul>
+        <li> Date de création:{{ objetDetails.date_created}} </li>
+        <li> Description: {{ objetDetails.description}}</li>
+        <li> url de l'image: {{objetDetails.image}}</li>
+        <li> Item réservé: {{ objetDetails.vendu}}</li>
+    </ul>
+<div>
+    image : <img src='{{objetDetails.image}}'width='400'>
+</div>
+
+</div>
+<button class="button" type="button">
+                    <a href="http://defisecuft.pythonanywhere.com/">Retour</a>
+                </button>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+ {% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<form actions="/" method='POST'>
+    <label for="image">image url</label>
+    <input type="text" name="image" id="image"><br>
+     <label for="description">Description</label>
+    <input type="text" name="description" id="description"><br>
+    <input type="submit" value="Ajouter">
+</form>
+{% endblock %}

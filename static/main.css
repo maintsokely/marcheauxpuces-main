@@ -1,0 +1,42 @@
+body {
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+table {
+    border: 3px solid Indigo;
+    margin:10px;
+    border-collapse: collapse;
+}
+
+tr {
+    background-color: LightBlue;
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+td {
+    text-align:center;
+    padding:5px;
+    border: 0.5px solid Indigo;
+
+}
+
+.form {
+    margin-top:20px;
+
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

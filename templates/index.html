@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<!-- Désolé, j'ai pu l'temps de m'occuper de ce site web, j'ai git le code ici :https://github.com/cheloudev/marcheauxpuces.git -->
+{% endblock %}
+
+{% block body %}
+<h3>Bienvenue au marché aux puces de la Fondation</h3>
+
+<div class="content">
+    <table>
+        <THEAD>
+        <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+        </THEAD>
+        <tbody>
+        <tr>
+            {% for objet in objets %}
+            <td>{{ objet.date_created.date()}}</td>
+            <td>{{ objet.description|safe }}</td>
+            <td><img src='{{objet.image}}'width='200'></td>
+
+            <td><button class="button type="button">
+                    <a href="/reserve/{{objet.id}}">J'achète!</a>
+                </button>
+                <br>
+                <button class="button type="button">
+                <a href="/details/{{objet.id}}">Détails</a>
+                </button>
+            </td>
+        </tr>
+             {% endfor %}
+        </tbody>
+    </table>
+
+
+</div>
+
+{% endblock %}
+
